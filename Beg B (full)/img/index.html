@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beg Blendz Barber Studio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        #home {
+            background: url("../img/imgs/BarberStudio.jpg");
+            height: 93vh;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .current-page {
+            color: gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>Beg Blendz</h1>
+                <p class="subtitle">BARBER STUDIO</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="current-page">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#book">Book</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="overlay">
+                <div class="landing-text">
+                    <h3>Look Good, Feel Better</h3>
+                    <h1>Beg's Barbershop</h1>
+                    <hr id="hr-main">
+                    <a href="#book" class="button btn-hire">Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="gallery-header">
+                <h1>Service Menu</h1>
+                <p>Look Good, Feel Better</p>
+            </div>
+            <div class="row gallery-row">
+                <div class="column">
+                    <div class="image-container">
+                        <img src="../img/imgs/fade.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Clean Cut</h2>
+                            <p>Detailed haircut with clippers and scissors.</p>
+                            <h3>$25</h3>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/imgs/shave.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Hot Towel Shave</h2>
+                            <p>Clean shave face with complimentary warm towel</p>
+                            <h3>$15</h3>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/imgs/enhancements.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Enhancements</h2>
+                            <p>Crisp edges fresh out the chair</P>
+                            <h3>$5</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="../img/imgs/beard.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Clean Cut + Beard</h2>
+                            <p>Detailed haircut and beard trim/lineup with clippers and scissors</p>
+                            <h3>$30</h3>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/imgs/perm.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Perm</h2>
+                            <p>Chemically treat straight hair with the best quality materials for lucious curls/waves</p>
+                            <h3>$50</h3>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/imgs/design2.jpg" alt="" style="width: 100%">
+                        <div class="overlay">
+                            <h2>Design</h2>
+                            <p>Design of choice to enhance style</P>
+                            <h3>$10</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Section -->
+        <section id="book" class="section">
+            <div class="book-container">
+                <div class="book-header">
+                    <h1>Book an Appointment</h1>
+                </div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-wrapper"></div>
+                    <div class="calendly-container">
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/anthonygarciaj22/haircut" style="min-width:320px;height:700px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        <!-- Calendly inline widget end -->
+                    </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about">
+                <div class="about-header">
+                    <h1>About Beg</h1>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p> Beg Blendz is a modern barbershop offering the latest trends and techniques in hair cutting and styling. With a passion for precision and creativity, we aim to give each client a unique experience that enhances their style and confidence.</p>
+                        <p> Our skilled barbers are trained in a variety of styles, from classic cuts to contemporary designs, ensuring that every visit leaves you looking sharp and feeling great. Come in, relax, and let us take care of the rest.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="../img/imgs/about.jpg" alt="About Beg Blendz" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact">
+                <h1>Contact Form</h1>
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <h4>Located in</h4>
+                        <p>Davie and Orlando (UCF Area)</p>
+                        <p>Florida</p>
+                        <h4>Phone</h4>
+                        <p>954-856-5761</p>
+                        <h4>Email</h4>
+                        <p>BegBlendz@gmail.com</p>
+                    </div>
+                    <div class="flex-item-right">
+                        <form action="">
+                            <input type="text" id="fname" placeholder="Your Name">
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                            <button type="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3><span id="demo">&copy;</span><a href="#">BegBlendz.com</a></h3>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all the sections that have an ID defined
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll("nav ul li a");
+
+            // Add an event listener to the window scroll event
+            window.addEventListener("scroll", () => {
+                let currentSection = "";
+
+                // Determine the current section based on scroll position
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        currentSection = section.getAttribute("id");
+                    }
+                });
+
+                // Remove the current-page class from all links
+                navLinks.forEach((navLink) => {
+                    navLink.classList.remove("current-page");
+                    if (navLink.getAttribute("href") === `#${currentSection}`) {
+                        navLink.classList.add("current-page");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

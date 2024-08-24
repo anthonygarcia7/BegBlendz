@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -43,16 +41,29 @@ header {
   top: 0;
   z-index: 1000;
 }
-@media (max-width: 665px) {
+
+@media (min-width: 375px) {
   .container-nav {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
+  
   header {
     text-align: center;
     padding: 1em 0;
+    position: relative;
+    width: 100%;
   }
+ nav ul {
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    width: 100%;
+  }
+
 }
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -95,16 +106,22 @@ nav a:focus {
 .current-page:hover {
   color: gray;
 }
-@media (max-width: 665px) {
+
+@media (min-width: 375px) {
   nav ul {
     flex-direction: column;
     align-items:center;    
   }
   nav li {
     margin: .7em 0;
-
+  }
+  nav a {
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Ensures the links are centered within the li elements */
   }
 }
+
 /* Home page */
 .overlay {
   position: absolute;
@@ -138,7 +155,7 @@ nav a:focus {
   padding-bottom: 5px;
   margin: 0 0;
 }
-@media (max-width: 600px) {
+@media (min-width: 375px) {
   .landing-text h1 {
     font-size: 260%;
   }
@@ -160,7 +177,7 @@ nav a:focus {
 .btn-hire:focus {
   color: grey;
 }
-@media (max-width: 800px) {
+@media (min-width: 375px) {
   .btn-hire {
     padding: 8px 16px;
   }
@@ -187,18 +204,24 @@ nav a:focus {
   font-family: "Lora", sans-serif;
 
 }
-@media (max-width: 600px) {
-  .gallery-header h1 {
-    font-size: x-large;
-  }
-}
+
 .gallery-header p {
   font-weight: 600;
   color: goldenrod;
   font-size: 1.5rem;
   font-family: "Lora", sans-serif;
+}
+
+@media (min-width: 375px) {
+  .gallery-header h1 {
+    font-size: xx-large;
+  }
+  .gallery-header p {
+    font-size: large;
+  }
 
 }
+
 .gallery-row {
   display: -ms-flexbox;
   display: flex;
@@ -265,19 +288,28 @@ nav a:focus {
 .image-container:hover .overlay {
   transform: scale(1.05);
 }
-@media (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+
+@media (min-width: 375px) {
+  .gallery-header h1 {
+    font-size: xx-large;
   }
-}
-@media (max-width: 600px) {
+  .gallery-header p {
+    font-size: large;
+  }
+
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+  .gallery-row {
+    padding-left:5%;
+  }
+  .overlay {
+    font-size: medium;
+    text-align:center;
+  }
+
 }
 
 /* Book Section */
@@ -291,7 +323,7 @@ nav a:focus {
   font-size: 3.2rem;
   color:white;
 }
-@media (max-width: 600px) {
+@media (min-width: 375px) {
   .book h1 {
     font-size: x-large;
   }
@@ -314,7 +346,7 @@ nav a:focus {
 .about-header {
   text-align: center;
 }
-@media (max-width: 1576px) {
+@media (min-width: 375px) {
   .about-header {
     text-align: center;
   }
@@ -351,7 +383,7 @@ nav a:focus {
     border-radius: 10px; /* Optional: adds rounded corners to the image */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) {
     .about-content {
         flex-direction: column; /* Stacks text and image vertically on smaller screens */
     }

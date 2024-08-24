@@ -42,7 +42,7 @@ header {
   z-index: 1000;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .container-nav {
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,7 @@ nav a:focus {
   color: gray;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   nav ul {
     flex-direction: column;
     align-items:center;    
@@ -155,7 +155,7 @@ nav a:focus {
   padding-bottom: 5px;
   margin: 0 0;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .landing-text h1 {
     font-size: 260%;
   }
@@ -177,7 +177,7 @@ nav a:focus {
 .btn-hire:focus {
   color: grey;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .btn-hire {
     padding: 8px 16px;
   }
@@ -212,7 +212,7 @@ nav a:focus {
   font-family: "Lora", sans-serif;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .gallery-header h1 {
     font-size: xx-large;
   }
@@ -289,7 +289,7 @@ nav a:focus {
   transform: scale(1.05);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .gallery-header h1 {
     font-size: xx-large;
   }
@@ -323,7 +323,7 @@ nav a:focus {
   font-size: 3.2rem;
   color:white;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .book h1 {
     font-size: x-large;
   }
@@ -346,7 +346,7 @@ nav a:focus {
 .about-header {
   text-align: center;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
   .about-header {
     text-align: center;
   }
@@ -383,7 +383,7 @@ nav a:focus {
     border-radius: 10px; /* Optional: adds rounded corners to the image */
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1050px) {
     .about-content {
         flex-direction: column; /* Stacks text and image vertically on smaller screens */
     }
